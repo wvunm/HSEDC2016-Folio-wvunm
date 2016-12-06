@@ -1,0 +1,49 @@
+body {
+  background-image: url(../images/mockups/1440.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.mainSection {
+  position: relative;
+  width: 1440px;
+  height: 800px;
+  overflow: hidden;
+}
+
+.mainSection h2 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 56px;
+}
+
+.mainSection p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 21px;
+  line-height: 36px;
+}
+
+.mainSection.center {
+  text-align: center;
+}
+
+.mainSection.center section {
+  top: 182px;
+  width: 100%;
+}
+
+.mainSection section {
+  position: absolute;
+  top: 147px;
+  width: 580px;
+}
+
+
+.mainSection.left {
+  left: 39px;
+}
+
+.mainSection.right {
+  left: 679px;
+}

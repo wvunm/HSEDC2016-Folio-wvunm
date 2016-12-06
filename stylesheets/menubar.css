@@ -1,0 +1,13 @@
+.menubar div {
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 87px;
+  height: 26px;
+  margin-top: -3px;
+  background-image: url(../images/logo.svg);
+}
