@@ -1,37 +1,20 @@
-body.landing * {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+/*color*/
+.mainSection.left {
+  background-color: #FBFFFE;
 }
 
-body.landing.bg {
-  background-image: url(../images/mockups/1440.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  width: 100%;
-  overflow-x: hidden;
+.mainSection.right,
+.mainSection.center {
+  background-color: #839797;
+  color: white;
 }
+/*color*/
 
-.landingWrapper {
-  width: 1440px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
-}
-
-body {
-  background-color: #FAFAFA;
-}
-
-.mainSection {
-  position: relative;
-  width: 1440px;
-  height: 800px;
-  overflow: hidden;
-}
-
+/*font*/
 .mainSection h2 {
   font-family: 'PT Sans Caption', sans-serif;
-  font-width: bold;
   font-size: 44px;
+  font-width: bold;
   line-height: 56px;
   margin-bottom: 26px;
 }
@@ -50,22 +33,18 @@ figure>a,
   font-size: 21px;
   line-height: 36px;
 }
+/*font*/
 
+.mainSection {
+  position: relative;
+  width: 1440px;
+  height: 800px;
+}
 
 .mainSection section {
   position: absolute;
   top: 191px;
   width: 580px;
-}
-
-.mainSection.left {
-  /*background-color: #FBFFFE;*/
-}
-
-.mainSection.right,
-.mainSection.center {
-  /*background-color: #839797;*/
-  color: white;
 }
 
 .mainSection.left section {
@@ -80,12 +59,6 @@ figure>a,
   text-align: center;
   top: 191px;
   width: 100%;
-}
-
-.mainSection.center footer p {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 16px;
-  line-height: 26px;
 }
 
 .mainSection section>figure {
@@ -133,37 +106,16 @@ div>.mockup {
 
 }
 
-.mockup.R1 {
-  width: 141px;
-  height: 318px;
-
-  order: 1;
-  flex: 0 1 auto;
-  align-self: auto;
-}
-
 #mockup2 {
   width: 141px;
   height: 398px;
   background-image: url(../images/works.png);
 }
 
-.mockup.R2 {
-  order: 2;
-  flex: 0 1 auto;
-  align-self: auto;
-}
-
 #mockup3 {
   width: 142px;
   height: 477px;
   background-image: url(../images/work.png);
-}
-
-.mockup.R3 {
-  order: 3;
-  flex: 0 1 auto;
-  align-self: auto;
 }
 
 #mockup4 {
@@ -174,32 +126,31 @@ div>.mockup {
   background-image: url(../images/screens.png);
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1179px) {
   body.landing.bg {
     background-image: url(../images/mockups/1180FirstBreakpoint.png);
   }
 
   .mainSection {
     width: 1180px;
-    height: 800px;
+    height: 560px;
   }
 
   .mainSection h2 {
-    font-size: 42px;
-    line-height: 56px;
+    font-size: 30px;
+    line-height: 39px;
     font-weight: bold;
+    margin-bottom: 18px;
   }
 
   .mainSection p {
-    margin-top: 23px;
-    font-size: 21px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   .mainSection.center h2 {
-    font-size: 44px;
-    line-height: 55px;
-    margin-bottom: 26px;
+    line-height: 39px;
+    margin-bottom: 18px;
   }
 
   .mainSection.center p {
@@ -207,43 +158,75 @@ div>.mockup {
  }
 
   .mainSection.left section {
-    left: 30px;
+    left: 187px;
+    top: 137px;
   }
 
   .mainSection.right section {
-    left: 671px;
+    left: 641px;
   }
 
   .mainSection.center section {
-    top: 193px;
-  }
-
-  .button {
-    margin-left: 440px;
+    top: 162px;
   }
 
   #mockup1 {
-    right: 29px;
+    right: 197px;
+    width: 375px;
+    height: 647px;
+    margin-top: 167px;
+  }
+
+  #mockup1-2 {
+    width: 100px;
+    height: 227px;
+  }
+
+  #mockup2 {
+    width: 99px;
+    height: 283px;
+  }
+
+  #mockup3 {
+    width: 99px;
+    height: 339px;
   }
 
   #mockup4 {
-    height: 403px;
-    width: 682px;
-    left: 511px;
-    top: 343px;
+    height: 295px;
+    width: 556px;
+    left: 516px;
+    top: 258px;
+  }
+
+  .mainSection.right>section.mockupRaw {
+    width: 276px;
+    margin-left: -482px;
+    margin-top: -128px;
+  }
+
+  .mainSection section>figure {
+    height: 4px;
+    width: 21px;
+    margin-top: 41px;
+  }
+
+  figure {
+    height: 0px;
+    width: 23px;
   }
 }
 
 
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 839px) {
   body.landing.bg {
     background-image: url(../images/mockups/840SecondBreakpoint.png);
   }
 
   .mainSection {
-    width: 840px;
-    height: 568px;
+    width: 839px;
+    height: 1024px;
   }
 
   .mainSection section {
@@ -254,6 +237,7 @@ div>.mockup {
     font-weight: bold;
     font-size: 30px;
     line-height: 39px;
+    margin-bottom: 27px;
   }
 
   .mainSection section>figure {
@@ -288,41 +272,30 @@ div>.mockup {
   }
 
   .mainSection.left section {
-    left: 22px;
+    left: 150px;
   }
 
   .mainSection.right section {
-    left: 475px;
+    left: 347px;
   }
 
   .mainSection.center section {
-    top: 139px;
-  }
-
-  .button {
-    margin-left: 313px;
-    width: 214px;
-    height: 36px;
-    margin-top: 41px;
-    line-height: 40px;
-  }
-
-  figure>a {
-    font-size: 14px;
+    top: 189px;
+    width: 100%;
   }
 
   #mockup1 {
-    right: 22px;
-    top: -65px;
-    width: 377px;
-    height: 400px;
+    right: 150px;
+    top: 314px;
+    width: 539px;
+    height: 545px;
   }
 
   #mockup4 {
-    height: 286px;
-    width: 473px;
-    left: 364px;
-    top: 243px;
+    height: 406px;
+    width: 743px;
+    left: 156px;
+    top: 503px;
   }
 
   .mockupRaw>div {
@@ -331,20 +304,33 @@ div>.mockup {
   }
 
   #mockup1-2 {
-    width: 100px;
-    height: 227px;
+    width: 141px;
+    height: 318px;
   }
 
   #mockup2 {
-    width: 100px;
-    height: 283px;
+    width: 141px;
+    height: 397px;
     margin-left: -62px;
   }
 
   #mockup3 {
-    width: 100px;
-    height: 339px;
+    width: 140px;
+    height: 478px;
     margin-left: -128px;
   }
 
+  .mainSection.right>section.mockupRaw {
+    width: 660px;
+    margin-left: -361px;
+    margin-top: 237px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #mockup1 { background-image: url(../images//about@2x.jpg) }
+  #mockup1-2 { background-image: url(../images/about@2x.jpg) }
+  #mockup2 { background-image: url(../images/works@2x.jpg) }
+  #mockup3 { background-image: url(../images/work@2x.jpg) }
+  #mockup4 { background-image: url(../images/screens@2x.jpg) }
 }
